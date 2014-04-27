@@ -112,3 +112,5 @@ rails is a gem and installing gem is so easy just type
 after installing gem type
 
 -rails -v
+
+Now you have installed independent ruby in your system :D

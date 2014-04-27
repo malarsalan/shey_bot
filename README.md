@@ -29,9 +29,9 @@ and choose install
 homebrew is awesome package manager for mac , if you used mac before its most chances that you know about that and for the newbie  its like apt-get and yum-install tool for mac
 
 open terminal and paste :
-
--ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
-
+```html
+    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+```
 after installation open terminal and run
 
 -brew doctor

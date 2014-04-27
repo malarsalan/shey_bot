@@ -18,9 +18,9 @@ Install required Components
 
 Install xcode and then install command line tools or just install command line tools stand alone. open terminal and type
 
-'''html
+```html
     xcode-select --install
-'''
+```
 
 and choose install
 

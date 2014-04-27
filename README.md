@@ -33,9 +33,9 @@ open terminal and paste :
     ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ```
 after installation open terminal and run
-
--brew doctor
-
+```html
+    brew doctor
+```
 Start Installation
 
 1 . Installing mysql ( & setup path )]
@@ -48,53 +48,61 @@ http://dev.mysql.com/downloads/mysql/
 or
 
 install using homebrew in terminal
-
--brew install mysql
-
+```html
+    brew install mysql
+```
 after installation open your .bashrc file or if you are using zsh then open .zshrc file
 
 and  add at the end ( for DMG installation )
-
--export PATH=$PATH:/usr/local/mysql/bin
+```html
+    export PATH=$PATH:/usr/local/mysql/bin
+```
 for brew installation
-
--export PATH=$PATH:$(brew --prefix mysql)/bin
+```html
+    export PATH=$PATH:$(brew --prefix mysql)/bin
+```
 2 . Installing  RVM
 
 before installing rvm optionally you can install gcc49
-
--brew tap homebrew/versions
--brew install gcc49
--brew install autoconf automake libtool libyaml readline libksba openssl
+```html
+    brew tap homebrew/versions
+    brew install gcc49
+    brew install autoconf automake libtool libyaml readline libksba openssl
+```
 after installation open your .bashrc file and add
-
--#export CC=/usr/local/bin/gcc-4.9
--#export CPP=/usr/local/bin/cpp-4.9
--#export CXX=/usr/local/bin/g++-4.9
+```html
+    #export CC=/usr/local/bin/gcc-4.9
+    #export CPP=/usr/local/bin/cpp-4.9
+    #export CXX=/usr/local/bin/g++-4.9
+```
 they are COMMENTED out ,  UNCOMMENT that when you facing problem in installing gems ( like libv8 and therubyracer )
 
 my .zshrc my zshrc
 
 now its time to install rvm
-
--\curl -L https://get.rvm.io | bash -s stable
+```html
+    \curl -L https://get.rvm.io | bash -s stable
+```
 after installation quite terminal and open again and type
-
--type rvm | head -n 1
+```html
+    type rvm | head -n 1
+```
 if installation was successful then you will get
-
--in terminal "rvm is a function"
-
+```html
+    in terminal "rvm is a function"
+```
 
 3 . Installing Ruby
 
 after installing rvm now lets install ruby
-
--rvm install ruby-2.0.0-p247
+```html
+    rvm install ruby-2.0.0-p247
+```
 after installation restart your terminal and type
-
--rvm use 2.0.0-p247 
--ruby -v
+```html
+    rvm use 2.0.0-p247 
+    ruby -v
+```
 you will get
 
 in terminal "ruby 2.0.0p247 (2013-06-27 revision 41674) [x86_64-darwin13.0.0]"
@@ -104,15 +112,16 @@ it means now ruby is installed its time to install gems
 4 . Installing Rails ( and other gems )
 
 rails is a gem and installing gem is so easy just type
-
--gem install rails 
--gem install mysql2
--it will install all dependent gems as well
+```html 
+    gem install rails 
+    gem install mysql2
+```
+it will install all dependent gems as well
 
 5 . Verifying installation
 
 after installing gem type
-
--rails -v
-
+```html
+rails -v
+```
 Now you have installed independent ruby in your system :D

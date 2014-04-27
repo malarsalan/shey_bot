@@ -18,8 +18,8 @@ Install required Components
 
 Install xcode and then install command line tools or just install command line tools stand alone. open terminal and type
 
-'''terminal
-xcode-select --install
+'''html
+    xcode-select --install
 '''
 
 and choose install

@@ -11,7 +11,7 @@ Here I will go step by step so you can create and possibly have fun with ruby.
 Step 1.
 
 Mac on maverick already comes with ruby which you dont have any authorizition over. You can not install ruby libraries meaning gems. so, we have to get our own ruby so we can mess around with it. 
-'''
+'''html
 Install required Components
 '''
 1 . xcode (command line tools )

@@ -1,19 +1,13 @@
-#!/usr/bin/env ruby
 require 'Twitter'
-# Create a read write application from : 
-# https://apps.twitter.com
-# authenticate it for your account
-# fill in the following
-config = {consumer_key:        'ZfruTPK51bB6VrhTZAJnpn8OH',  consumer_secret:     'bhS27kbr6lsnBgbTL6ry16V8YtElGoGHyySryxGnDGuE68cP',
-          access_token:        '2493510627-S69keaq5WUlneuJLqW0BoZqy0Fe6Tmjgtw8Ht',  access_token_secret: '3yMCHfsR9mofQCULUDGnxaErj3gvLXVzSlvZSDxuMMysg'}
-me = 'shey_bot' # to prevent DM yourself
+require './config'
+
 
 Thread.new do
   loop do
     begin
 
-      rClient = Twitter::REST::Client.new config
-      sClient = Twitter::Streaming::Client.new(config)
+      rClient = Twitter::REST::Client.new $config
+      sClient = Twitter::Streaming::Client.new($config)
       sClient.user do |object|
         if object.is_a? Twitter::Streaming::Event and object.name==:follow
           user = object.source
